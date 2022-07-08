@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="austin-web" />
+        <module name="austin-support" />
+        <module name="austin-handler" />
+        <module name="austin-stream" />
+        <module name="austin-service" />
+        <module name="austin-cron" />
+        <module name="austin-service-impl" />
+        <module name="austin-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="handler" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="austin-common" options="-parameters" />
+      <module name="austin-cron" options="-parameters" />
+      <module name="austin-handler" options="-parameters" />
+      <module name="austin-service" options="-parameters" />
+      <module name="austin-service-impl" options="-parameters" />
+      <module name="austin-stream" options="-parameters" />
+      <module name="austin-support" options="-parameters" />
+      <module name="austin-web" options="-parameters" />
+    </option>
+  </component>
+</project>
